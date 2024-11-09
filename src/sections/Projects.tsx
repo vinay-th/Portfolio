@@ -6,10 +6,11 @@ import CheckIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpgright from '@/assets/icons/arrow-up-right.svg';
 import GrainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from '@/components/SectionHeader';
-import { div } from 'framer-motion/client';
+import { div, i } from 'framer-motion/client';
 
 const portfolioProjects = [
   {
+    id: 1,
     company: 'Akshar',
     year: '2024',
     title: 'Smart Classroom Management System',
@@ -22,6 +23,7 @@ const portfolioProjects = [
     image: AksharLandingPage,
   },
   {
+    id: 2,
     company: 'Wanderhost',
     year: '2023',
     title: 'A hosting platform for travelers',
@@ -34,6 +36,7 @@ const portfolioProjects = [
     image: WanderHostLandingPage,
   },
   {
+    id: 3,
     company: 'Quantum Dynamics',
     year: '2024',
     title: 'AI Startup Landing Page',
@@ -59,13 +62,14 @@ export const ProjectsSection = () => {
         <div className="md:mt-20 flex flex-col mt-10 gap-20">
           {portfolioProjects.map((project) => (
             <div
+              style={{ top: `calc(64px + ${project.id * 38}px)` }}
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden
+              className="bg-gray-800 rounded-3xl z-0 overflow-hidden
               after:z-10 after:content-[''] after:absolute after:inset-0 after:border-2 after:border-white/20 after:rounded-3xl px-8 pt-8
-              md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20"
+              md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 sticky"
             >
               <div
-                className="absolute inset-0 -z-10"
+                className="sticky inset-0 -z-10"
                 style={{
                   backgroundImage: `url(${GrainImage.src})`,
                   opacity: 0.05,
