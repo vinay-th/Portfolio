@@ -1,6 +1,5 @@
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
-import StarIcon from '@/assets/icons/star.svg';
 import CodeGif from '@/assets/images/code-bg.gif';
 import Image from 'next/image';
 
@@ -18,9 +17,6 @@ import NodeSvg from '@/assets/icons/nodejs.svg';
 import mapImage from '@/assets/images/map.png';
 import smileEmoji from '@/assets/images/memoji-smile.png';
 
-import { title } from 'process';
-import { div } from 'framer-motion/client';
-import { TechIcon } from '@/components/TechIcon';
 import { CardHeader } from '@/components/CardHeader';
 import { ToolBoxItems } from '@/components/ToolBoxItems';
 
@@ -146,14 +142,16 @@ export const AboutSection = () => {
                 web experiences."
                   className="px-6 pt-6"
                 />
-                <div className="[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                  <ToolBoxItems items={toolboxItems} className="mt-6" />
-                  <ToolBoxItems
-                    items={toolboxItems}
-                    className="mt-6"
-                    itemWrapperClassName="-translate-x-1/2"
-                  />
-                </div>
+                <ToolBoxItems
+                  items={toolboxItems}
+                  className="mt-9"
+                  itemWrapperClassName="animate-move-left"
+                />
+                <ToolBoxItems
+                  items={toolboxItems}
+                  className="mt-6"
+                  itemWrapperClassName="translate-x-1/2 animate-move-right"
+                />
               </Card>
             </div>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-5 lg:grid-cols-3">
