@@ -98,7 +98,7 @@ export const HeroSection = () => {
           <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
       </div>
-      <div className="container">
+      <div className="container z-15">
         <div className="flex flex-col items-center">
           <Image src={memojiImage} className="size-[120px]" alt="person" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
@@ -122,15 +122,19 @@ export const HeroSection = () => {
             <br /> Let&apos;s discuss your next project.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className=" size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋🏻</span>
-            <span className="font-semibold">Contact Me</span>
-          </button>
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-50">
+          <a href="#projects" className="relative z-50 cursor-pointer">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-gray/50 hover:text-white/50 transition-colors">
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
+          <a href="#contact" className="relative z-50 cursor-pointer">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-gray-900 hover:text-white transition-colors">
+              <span>👋🏻</span>
+              <span className="font-semibold">Contact Me</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
