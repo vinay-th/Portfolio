@@ -1,8 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Vinay's Portfolio Wonderland
 
-## Getting Started
+![Portfolio Preview](public/preview.png)
 
-First, run the development server:
+## ✨ Welcome to My Digital Universe!
+
+Hey there! 👋 Welcome to my portfolio website's codebase. This isn't just any portfolio—it's a cosmic blend of modern tech and sleek design. Featuring smooth animations, a stellar tech stack, and some seriously cool interactive elements!
+
+## 🎯 Key Features
+
+- 🌗 Stunning hero section with orbital animations
+- 🎨 Gradient-rich, modern UI design
+- 📱 Fully responsive across all devices
+- 🔄 Smooth scrolling section navigation
+- ⚡ Lightning-fast performance
+- 🎮 Interactive elements and hover effects
+
+## 🛠️ Tech Stack
+
+<div align="center">
+  <img src="src/assets/icons/nextjs.svg" width="50" alt="Next.js" title="Next.js"/>
+  <img src="src/assets/icons/react.svg" width="50" alt="React" title="React"/>
+  <img src="src/assets/icons/javascript.svg" width="50" alt="JavaScript" title="JavaScript"/>
+  <img src="src/assets/icons/nodejs.svg" width="50" alt="Node.js" title="Node.js"/>
+</div>
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
 
 ```bash
 npm run dev
