@@ -1,5 +1,5 @@
-[[redirects]];
-from = '/lander';
-to = '/';
-status = 301;
-force = true;
+[[redirects]]
+  from = "/lander"
+  to = "/"
+  status = 301
+  force = true
