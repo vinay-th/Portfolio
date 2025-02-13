@@ -1,5 +1,5 @@
 import AksharLandingPage from '@/assets/images/akshar-landing-page.png';
-import WanderHostLandingPage from '@/assets/images/wanderhost-landing-page.png';
+import Zoober from '@/assets/images/zoober.png';
 import crevo from '@/assets/images/crevo.png';
 import Image from 'next/image';
 import CheckIcon from '@/assets/icons/check-circle.svg';
@@ -24,19 +24,6 @@ const portfolioProjects = [
   },
   {
     id: 2,
-    company: 'Wanderhost',
-    year: '2023',
-    title: 'A hosting platform for travelers',
-    results: [
-      { title: 'MERN Stack Development' },
-      { title: 'Created a responsive website' },
-      { title: 'CRUD operations' },
-    ],
-    link: 'https://github.com/vinay-th/Wanderhost',
-    image: WanderHostLandingPage,
-  },
-  {
-    id: 3,
     company: 'Crevo - Creative Evolution',
     year: '2024',
     title: 'The Ultimate Design Tool 🎨',
@@ -47,6 +34,19 @@ const portfolioProjects = [
     ],
     link: 'https://github.com/vinay-th/Crevo',
     image: crevo,
+  },
+  {
+    id: 3,
+    company: 'Zoober',
+    year: '2024',
+    title: 'A full stack Uber clone',
+    results: [
+      { title: 'React native Development' },
+      { title: 'Created a Android/IOS app' },
+      { title: 'Expo framework' },
+    ],
+    link: 'https://github.com/vinay-th/Zoober',
+    image: Zoober,
   },
 ];
 
