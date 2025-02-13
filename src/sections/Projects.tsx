@@ -1,6 +1,6 @@
 import AksharLandingPage from '@/assets/images/akshar-landing-page.png';
 import WanderHostLandingPage from '@/assets/images/wanderhost-landing-page.png';
-import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
+import crevo from '@/assets/images/crevo.png';
 import Image from 'next/image';
 import CheckIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpgright from '@/assets/icons/arrow-up-right.svg';
@@ -37,16 +37,16 @@ const portfolioProjects = [
   },
   {
     id: 3,
-    company: 'Quantum Dynamics',
+    company: 'Crevo - Creative Evolution',
     year: '2024',
-    title: 'AI Startup Landing Page',
+    title: 'The Ultimate Design Tool 🎨',
     results: [
-      { title: 'ReactJS Development' },
-      { title: 'UI/UX Design' },
-      { title: 'SEO Optimization' },
+      { title: 'NextJS Development' },
+      { title: 'Ai integration' },
+      { title: 'Design seamlessly' },
     ],
-    link: '#',
-    image: aiStartupLandingPage,
+    link: 'https://github.com/vinay-th/Crevo',
+    image: crevo,
   },
 ];
 
