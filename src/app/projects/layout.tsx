@@ -32,8 +32,8 @@ export default function ProjectsRootLayout({
           </button>
         </Link>
 
-        <span className="font-serif text-2xl md:text-2xl text-center tracking-wide pr-20">
-          My Projects
+        <span className="font-serif text-5xl md:text-2xl text-center tracking-wide pr-20">
+          Featured Projects
         </span>
 
         <Link href="https://github.com/vinay-th">
