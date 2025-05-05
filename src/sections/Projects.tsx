@@ -1,12 +1,15 @@
 import AksharLandingPage from '@/assets/images/akshar-landing-page.png';
 import Zoober from '@/assets/images/zoober.png';
 import crevo from '@/assets/images/crevo.png';
+import Verifi from '@/assets/images/verifi.png';
 import Image from 'next/image';
 import CheckIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpgright from '@/assets/icons/arrow-up-right.svg';
+import ArrowDown from '@/assets/icons/arrow-down.svg';
 import GrainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from '@/components/SectionHeader';
 import { div, i } from 'framer-motion/client';
+import Link from 'next/link';
 
 const portfolioProjects = [
   {
@@ -47,6 +50,19 @@ const portfolioProjects = [
     ],
     link: 'https://github.com/vinay-th/Zoober',
     image: Zoober,
+  },
+  {
+    id: 4,
+    company: 'VeriFi',
+    year: '2025',
+    title: 'A Web3 document verifier',
+    results: [
+      { title: 'NextJS Development' },
+      { title: 'Blockchain integration' },
+      { title: 'Decentralized Web3 document authenticity verifier' },
+    ],
+    link: 'https://github.com/vinay-th/VeriFi',
+    image: Verifi,
   },
 ];
 
@@ -114,6 +130,14 @@ export const ProjectsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex items-center justify-center pt-10">
+          <Link href="/projects">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-gray/50 hover:text-white/50 transition-colors">
+              <span className="font-semibold">Explore My projects</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </Link>
         </div>
       </div>
     </section>
